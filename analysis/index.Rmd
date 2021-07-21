@@ -9,3 +9,16 @@ editor_options:
 ---
 
 Welcome to my research website.
+
+
+1. Download of the phenotypic dataset from Cassavabase [wizard tool](https://cassavabase.org/user/login?goto_url=%2Fbreeders%2Fsearch), use the following filters:
+   1. Select the trait list `TraitsLucianoGS`
+   2. Select the following `Trial Types`:
+      - *Clonal Evaluation*;
+      - *Preliminary Yield Trial*;
+      - *Advanced Yield Trial*;
+      - *Uniform Yield Trial*;
+      - *Regional Trials*;
+      - *phenotyping_trial*.
+   3. Select `Years` from 2010 to 2021.
+   4. Select all the `trials` available at cassavabase after the filter.
