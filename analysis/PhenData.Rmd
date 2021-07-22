@@ -7,10 +7,42 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Introduction
+# Phenotypic data - Cassavabase
 
+Initialy we are going to download phenotypic data from Cassavabase.
+In this case we are going to download the data from traits related to plant Architecture, as the following table:
 
-1. Download of the phenotypic dataset from Cassavabase [wizard tool](https://cassavabase.org/user/login?goto_url=%2Fbreeders%2Fsearch), use the following filters:
+<br />
+
+| Trait | Cassavabase code | Description |
+| --- | --- | ---|
+| plant architecture visual rating 1-5 | [CO_334:0000099](https://cassavabase.org/cvterm/70722/view) | Plant architecture on a 1-5 scale with 1 = excellent, 2 good, 3 = fair, 4 = bad, and 5 = very bad |
+| plant architecture visual rating 1-5 at month 8 | COMP:0000119 |    |
+| flowering ability visual assessment 0-3 | [CO_334:0000233](https://cassavabase.org/cvterm/76963/view) | Presence of flowers (0=none; 1=little; 2=intermediate; 3=many). |
+| flower visual rating 0&1 | [CO_334:0000111](https://cassavabase.org/cvterm/70713/view) | Visual rating of flowers (50%) in plant with 0 = absent and 1 = present. |
+| initial plant vigor assessment 1-5 | [CO_334:0000220](https://cassavabase.org/cvterm/76955/view) | Visual assessment of plant vigor during establishment (1=very little vigor, and 5 = very vigorous). as being evaluated by CIAT. |
+| initial vigor assessment 1-7 | [CO_334:0000009](https://cassavabase.org/cvterm/70765/view) | Visual assessment of plant vigor during establishment scored one month after planting. 3 = Not vigorous, 5 = Medium vigor, 7 = highly vigorous. |
+| number of forks counting | [CO_334:0000146](https://cassavabase.org/cvterm/76816/view) | Number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level. |
+| number of forks on branching level 1 counting | [CO_334:0000522](https://cassavabase.org/cvterm/77515/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the first branching level. |
+| number of forks on branching level 2 counting | [CO_334:0000523](https://cassavabase.org/cvterm/77519/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the second branching level. |
+| number of forks on branching level 3 counting | [CO_334:0000524](https://cassavabase.org/cvterm/77511/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the third branching level. |
+| number of nodes at branching level 1 counting | [CO_334:0000352](https://cassavabase.org/cvterm/77487/view) | Number of nodes at the first branching level. |
+| number of nodes at branching level 2 counting | [CO_334:0000363](https://cassavabase.org/cvterm/77488/view) | Number of nodes at the second branching level. |
+| number of nodes at branching level 3 counting | [CO_334:0000368](https://cassavabase.org/cvterm/77486/view) | Number of nodes at the third branching level. |
+| plant height measurement in cm | [CO_334:0000018](https://cassavabase.org/cvterm/70674/view) | Vertical height of plants from the ground to top of the canopy measured in centimeter (cm). |
+| plant height measurement in cm at month 12 | COMP:0000181 |   |
+| plant height with leaf in cm | [CO_334:0000123](https://cassavabase.org/cvterm/76806/view) | Portion of the stem with leaves measured as the distance in centimeter from the point of attachment of the oldest leaf to the youngest leaf (apical leaf portion). |
+| plant height without leaf | [CO_334:0000125](https://cassavabase.org/cvterm/76838/view) | Portion of stem with no leaf measured in centimeter (cm) by deducting plant height with leaf from plant height. |
+| plant height without leaf at month 12 | COMP:0000182 |    |
+| stalk length evaluation | [CO_334:0000227](https://cassavabase.org/cvterm/76941/view) | Visual assessment of the average length of the stalks (1=short; 2=intermediate; 3=long) |
+| stem diameter measurement in cm | [CO_334:0000257](https://cassavabase.org/cvterm/77121/view) | Measurement of stem diameter taken on the middle of the plant in centimeter (cm) using the vernier caliper. |
+| stem diameter measurement in cm at month 5 | COMP:0000129 |   |
+| stem diameter measurement in cm at month 6 | COMP:0000130 |   |
+
+<br />
+
+## 1. Download of the phenotypic dataset from Cassavabase [wizard tool](https://cassavabase.org/user/login?goto_url=%2Fbreeders%2Fsearch)
+Use the following filters:
    1. Select the trait list `TraitsLucianoGS`
    2. Select the following `Trial Types`:
       - *Clonal Evaluation*;
@@ -21,3 +53,15 @@ editor_options:
       - *phenotyping_trial*.
    3. Select `Years` from 2010 to 2021.
    4. Select all the `trials` available at cassavabase after the filter.
+   
+
+## Next Steps
+
+- [x] Download Phenotypic dataset;
+- [ ] select trials using the trait heritability;
+- [ ] estimate the BLUPS, and genetic correlations between the traits;
+- [ ] Create a list with the clone names;
+- [ ] Download the Genotypic dataset from the clones phenotyped;
+- [ ] Perform the genomic prediction single-trait with G-BLUP Add, Add + Dom genetic models.
+      - 50 replicates
+      - 100 clones per fold.
