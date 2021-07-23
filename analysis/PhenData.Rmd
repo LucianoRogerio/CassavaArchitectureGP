@@ -54,6 +54,15 @@ Use the following filters:
    3. Select `Years` from 2010 to 2021.
    4. Select all the `trials` available at cassavabase after the filter.
    
+## 2. Metadata Information
+
+```{r}
+library(tidyverse); library(reactable)
+PhenoData <- readRDS("data/phenotypePAGP.RDS")
+
+PhenoData %>% group_by(studyYear, programName) %>% count(studyName) %>% 
+   reactable(defaultPageSize = 50)
+```
 
 ## Next Steps
 
