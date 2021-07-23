@@ -482,16 +482,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioCassavaArchitectureGPtree09489e4d820acec79b7eceb38b056e5f9041f824targetblank09489e4a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/LucianoRogerio/CassavaArchitectureGP/tree/09489e4d820acec79b7eceb38b056e5f9041f824" target="_blank">09489e4</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioCassavaArchitectureGPtree3e1bc0d2879b96d7f7490e4a84706001391322f7targetblank3e1bc0da"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/LucianoRogerio/CassavaArchitectureGP/tree/3e1bc0d2879b96d7f7490e4a84706001391322f7" target="_blank">3e1bc0d</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioCassavaArchitectureGPtree09489e4d820acec79b7eceb38b056e5f9041f824targetblank09489e4a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioCassavaArchitectureGPtree3e1bc0d2879b96d7f7490e4a84706001391322f7targetblank3e1bc0da" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/LucianoRogerio/CassavaArchitectureGP/tree/09489e4d820acec79b7eceb38b056e5f9041f824" target="_blank">09489e4</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/LucianoRogerio/CassavaArchitectureGP/tree/3e1bc0d2879b96d7f7490e4a84706001391322f7" target="_blank">3e1bc0d</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -503,7 +503,6 @@ Ignored files:
 
 Unstaged changes:
     Modified:   analysis/PhenData.Rmd
-    Modified:   data/phenotypePAGP.RDS
 
 </code></pre>
 <p>
@@ -542,6 +541,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/LucianoRogerio/CassavaArchitectureGP/blob/3e1bc0d2879b96d7f7490e4a84706001391322f7/analysis/PhenData.Rmd" target="_blank">3e1bc0d</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2021-07-22
+</td>
+<td>
+PhenD update
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/LucianoRogerio/CassavaArchitectureGP/3e1bc0d2879b96d7f7490e4a84706001391322f7/docs/PhenData.html" target="_blank">3e1bc0d</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2021-07-22
+</td>
+<td>
+PhenD update
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -769,18 +802,10 @@ Publish the update 1 Phenotypic data CassavaArchitectureGP
 <h2>1. Download of the phenotypic dataset from Cassavabase <a href="https://cassavabase.org/user/login?goto_url=%2Fbreeders%2Fsearch">wizard tool</a></h2>
 <p>Use the following filters: 1. Select the trait list <code>TraitsLucianoGS</code> 2. Select the following <code>Trial Types</code>: - <em>Clonal Evaluation</em>; - <em>Preliminary Yield Trial</em>; - <em>Advanced Yield Trial</em>; - <em>Uniform Yield Trial</em>; - <em>Regional Trials</em>; - <em>phenotyping_trial</em>. 3. Select <code>Years</code> from 2010 to 2021. 4. Select all the <code>trials</code> available at cassavabase after the filter.</p>
 </div>
-<div id="metadata-information" class="section level2">
-<h2>2. Metadata Information</h2>
-<pre class="r"><code>library(tidyverse); library(reactable)</code></pre>
-<pre><code>-- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>v ggplot2 3.3.5     v purrr   0.3.4
-v tibble  3.1.2     v dplyr   1.0.7
-v tidyr   1.1.3     v stringr 1.4.0
-v readr   1.4.0     v forcats 0.5.1</code></pre>
-<pre><code>-- Conflicts ------------------------------------------ tidyverse_conflicts() --
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>PhenoData &lt;- readRDS(&quot;data/phenotypePAGP.RDS&quot;)
+<div id="phenotypic-data-information" class="section level2">
+<h2>2. Phenotypic data Information</h2>
+<pre class="r"><code>library(tidyverse); library(reactable)
+PhenoData &lt;- readRDS(&quot;data/phenotypePAGP.RDS&quot;)
 
 PhenoData %&gt;% group_by(studyYear, programName) %&gt;% count(studyName) %&gt;% 
    reactable(defaultPageSize = 50)</code></pre>

@@ -54,9 +54,9 @@ Use the following filters:
    3. Select `Years` from 2010 to 2021.
    4. Select all the `trials` available at cassavabase after the filter.
    
-## 2. Metadata Information
+## 2. Phenotypic data Information
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 library(tidyverse); library(reactable)
 PhenoData <- readRDS("data/phenotypePAGP.RDS")
 
