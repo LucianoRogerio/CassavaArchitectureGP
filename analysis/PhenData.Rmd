@@ -42,7 +42,9 @@ In this case we are going to download the data from traits related to plant Arch
 <br />
 
 ## 1. Download of the phenotypic dataset from Cassavabase [wizard tool](https://cassavabase.org/user/login?goto_url=%2Fbreeders%2Fsearch)
+
 Use the following filters:
+
    1. Select the trait list `TraitsLucianoGS`
    2. Select the following `Trial Types`:
       - *Clonal Evaluation*;
