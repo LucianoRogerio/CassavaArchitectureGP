@@ -7,6 +7,8 @@ editor_options:
   chunk_output_type: console
 ---
 
+Wrong section? get back to [home](index.html).
+
 # Phenotypic data - Cassavabase
 
 Initialy we are going to download phenotypic data from Cassavabase.
@@ -76,3 +78,6 @@ PhenoData %>% group_by(studyYear, programName) %>% count(studyName) %>%
 - [ ] Perform the genomic prediction single-trait with G-BLUP Add, Add + Dom genetic models.
       - 50 replicates
       - 100 clones per fold.
+
+
+[home](index.html)
