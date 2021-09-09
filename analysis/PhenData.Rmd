@@ -71,7 +71,7 @@ PhenoData %>% group_by(studyYear, programName) %>% count(studyName) %>%
 ## Next Steps
 
 - [x] Download Phenotypic dataset;
-- [ ] select trials using the trait heritability;
+- [ ] select trials by reability;
 - [ ] estimate the BLUPS, and genetic correlations between the traits;
 - [ ] Create a list with the clone names;
 - [ ] Download the Genotypic dataset from the clones phenotyped;
