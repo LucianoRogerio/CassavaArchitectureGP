@@ -31,6 +31,7 @@ In this case we are going to download the data from traits related to plant Arch
 | number of nodes at branching level 1 counting | [CO_334:0000352](https://cassavabase.org/cvterm/77487/view) | Number of nodes at the first branching level. |
 | number of nodes at branching level 2 counting | [CO_334:0000363](https://cassavabase.org/cvterm/77488/view) | Number of nodes at the second branching level. |
 | number of nodes at branching level 3 counting | [CO_334:0000368](https://cassavabase.org/cvterm/77486/view) | Number of nodes at the third branching level. |
+| first apical branch height measurement in cm | [CO_334:0000106](https://cassavabase.org/cvterm/70751/view) | Height of first apical branch (ground level to point of first Apical branch, 9 months after planting) in cm |
 | plant height measurement in cm | [CO_334:0000018](https://cassavabase.org/cvterm/70674/view) | Vertical height of plants from the ground to top of the canopy measured in centimeter (cm). |
 | plant height measurement in cm at month 12 | COMP:0000181 |   |
 | plant height with leaf in cm | [CO_334:0000123](https://cassavabase.org/cvterm/76806/view) | Portion of the stem with leaves measured as the distance in centimeter from the point of attachment of the oldest leaf to the youngest leaf (apical leaf portion). |
@@ -64,7 +65,13 @@ Use the following filters:
 library(tidyverse); library(reactable)
 PhenoData <- readRDS("data/phenotypePAGP.RDS")
 
-PhenoData %>% group_by(studyYear, programName) %>% count(studyName) %>% 
+cat("Table 2. Number of trial per Institute in Cassavabase with Cassava Plant Shape Traits.", "\n")
+PhenoData %>% group_by(programName, studyYear) %>% summarise(n_trials = unique(studyName)) %>%
+   count(paste(programName,studyYear)) %>% select(programName, studyYear, n) %>%
+   reactable(defaultPageSize = 20)
+
+cat("Table 3. Plot number of the trials available in Cassavabase with Cassava Plant Shape traits.", "\n")
+PhenoData %>% group_by(programName, studyYear) %>% count(studyName) %>% 
    reactable(defaultPageSize = 50)
 ```
 
