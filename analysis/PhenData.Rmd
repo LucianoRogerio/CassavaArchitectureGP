@@ -62,23 +62,30 @@ Use the following filters:
 ## 2. Phenotypic data Information
 
 ```{r message=FALSE, warning=FALSE}
-library(tidyverse); library(reactable)
-PhenoData <- readRDS("data/phenotypePAGP.RDS")
+library(tidyverse); library(reactable); library(here)
+PhenoData <- readRDS(here("data","phenotypePAGP.RDS"))
+
+PhenoData %>% group_by(programName, studyYear) %>% summarise(n_trials = unique(studyName)) -> PhenoData2
 
 cat("Table 2. Number of trial per Institute in Cassavabase with Cassava Plant Shape Traits.", "\n")
-PhenoData %>% group_by(programName, studyYear) %>% summarise(n_trials = unique(studyName)) %>%
-   count(paste(programName,studyYear)) %>% select(programName, studyYear, n) %>%
-   reactable(defaultPageSize = 20)
+table(PhenoData2$programName, PhenoData2$studyYear)
 
 cat("Table 3. Plot number of the trials available in Cassavabase with Cassava Plant Shape traits.", "\n")
 PhenoData %>% group_by(programName, studyYear) %>% count(studyName) %>% 
    reactable(defaultPageSize = 50)
 ```
 
+
+## 3. Heritability and Reliability analysis per trial
+
+The heritability and Reliability were estimated for each trial.
+We will proceed with the trails with reliability bigger than 0.2.
+
+
 ## Next Steps
 
 - [x] Download Phenotypic dataset;
-- [ ] select trials by reability;
+- [ ] select trials by reliability;
 - [ ] estimate the BLUPS, and genetic correlations between the traits;
 - [ ] Create a list with the clone names;
 - [ ] Download the Genotypic dataset from the clones phenotyped;
