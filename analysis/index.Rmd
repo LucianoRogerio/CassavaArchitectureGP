@@ -12,4 +12,4 @@ Welcome to my research website.
 
 
 1. Phenotypic dataset working section [link](PhenData.html)
-   - Here I describe how the phenotypic data were filtered, than selected by trials due to heritability.
+   - Here I describe how the phenotypic data were filtered, than selected by trials due to reliability and heritability.

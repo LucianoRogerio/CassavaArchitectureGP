@@ -16,31 +16,34 @@ In this case we are going to download the data from traits related to plant Arch
 
 <br />
 
-| Trait | Cassavabase code | Description |
-| --- | --- | ---|
-| plant architecture visual rating 1-5 | [CO_334:0000099](https://cassavabase.org/cvterm/70722/view) | Plant architecture on a 1-5 scale with 1 = excellent, 2 good, 3 = fair, 4 = bad, and 5 = very bad |
-| plant architecture visual rating 1-5 at month 8 | COMP:0000119 |    |
-| flowering ability visual assessment 0-3 | [CO_334:0000233](https://cassavabase.org/cvterm/76963/view) | Presence of flowers (0=none; 1=little; 2=intermediate; 3=many). |
-| flower visual rating 0&1 | [CO_334:0000111](https://cassavabase.org/cvterm/70713/view) | Visual rating of flowers (50%) in plant with 0 = absent and 1 = present. |
-| initial plant vigor assessment 1-5 | [CO_334:0000220](https://cassavabase.org/cvterm/76955/view) | Visual assessment of plant vigor during establishment (1=very little vigor, and 5 = very vigorous). as being evaluated by CIAT. |
-| initial vigor assessment 1-7 | [CO_334:0000009](https://cassavabase.org/cvterm/70765/view) | Visual assessment of plant vigor during establishment scored one month after planting. 3 = Not vigorous, 5 = Medium vigor, 7 = highly vigorous. |
-| number of forks counting | [CO_334:0000146](https://cassavabase.org/cvterm/76816/view) | Number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level. |
-| number of forks on branching level 1 counting | [CO_334:0000522](https://cassavabase.org/cvterm/77515/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the first branching level. |
-| number of forks on branching level 2 counting | [CO_334:0000523](https://cassavabase.org/cvterm/77519/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the second branching level. |
-| number of forks on branching level 3 counting | [CO_334:0000524](https://cassavabase.org/cvterm/77511/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the third branching level. |
-| number of nodes at branching level 1 counting | [CO_334:0000352](https://cassavabase.org/cvterm/77487/view) | Number of nodes at the first branching level. |
-| number of nodes at branching level 2 counting | [CO_334:0000363](https://cassavabase.org/cvterm/77488/view) | Number of nodes at the second branching level. |
-| number of nodes at branching level 3 counting | [CO_334:0000368](https://cassavabase.org/cvterm/77486/view) | Number of nodes at the third branching level. |
-| first apical branch height measurement in cm | [CO_334:0000106](https://cassavabase.org/cvterm/70751/view) | Height of first apical branch (ground level to point of first Apical branch, 9 months after planting) in cm |
-| plant height measurement in cm | [CO_334:0000018](https://cassavabase.org/cvterm/70674/view) | Vertical height of plants from the ground to top of the canopy measured in centimeter (cm). |
-| plant height measurement in cm at month 12 | COMP:0000181 |   |
-| plant height with leaf in cm | [CO_334:0000123](https://cassavabase.org/cvterm/76806/view) | Portion of the stem with leaves measured as the distance in centimeter from the point of attachment of the oldest leaf to the youngest leaf (apical leaf portion). |
-| plant height without leaf | [CO_334:0000125](https://cassavabase.org/cvterm/76838/view) | Portion of stem with no leaf measured in centimeter (cm) by deducting plant height with leaf from plant height. |
-| plant height without leaf at month 12 | COMP:0000182 |    |
-| stalk length evaluation | [CO_334:0000227](https://cassavabase.org/cvterm/76941/view) | Visual assessment of the average length of the stalks (1=short; 2=intermediate; 3=long) |
-| stem diameter measurement in cm | [CO_334:0000257](https://cassavabase.org/cvterm/77121/view) | Measurement of stem diameter taken on the middle of the plant in centimeter (cm) using the vernier caliper. |
-| stem diameter measurement in cm at month 5 | COMP:0000129 |   |
-| stem diameter measurement in cm at month 6 | COMP:0000130 |   |
+#### Table 1. List of traits downloaded from Cassavabase.
+
+| Trait | Abbreviation | Cassavabase code | Description |
+| --- | --- | --- | --- |
+| plant architecture visual rating 1-5 | PlantArchitecture | [CO_334:0000099](https://cassavabase.org/cvterm/70722/view) | Plant architecture on a 1-5 scale with 1 = excellent, 2 good, 3 = fair, 4 = bad, and 5 = very bad |
+| plant architecture visual rating 1-5 at month 8 | PlantArchitecture8m | COMP:0000119 | Plant architecture on a 1-5 scale with 1 = excellent, 2 good, 3 = fair, 4 = bad, and 5 = very bad |
+| flowering ability visual assessment 0-3 | FlowerVisRate | [CO_334:0000233](https://cassavabase.org/cvterm/76963/view) | Presence of flowers (0=none; 1=little; 2=intermediate; 3=many). |
+| flower visual rating 0 & 1 | FlowerPresence | [CO_334:0000111](https://cassavabase.org/cvterm/70713/view) | Visual rating of flowers (50%) in plant with 0 = absent and 1 = present. |
+| initial plant vigor assessment 1-5 | VigorCIAT | [CO_334:0000220](https://cassavabase.org/cvterm/76955/view) | Visual assessment of plant vigor during establishment (1=very little vigor, and 5 = very vigorous). as being evaluated by CIAT. |
+| initial vigor assessment 1-7 | Vigor | [CO_334:0000009](https://cassavabase.org/cvterm/70765/view) | Visual assessment of plant vigor during establishment scored one month after planting. 3 = Not vigorous, 5 = Medium vigor, 7 = highly vigorous. |
+| number of forks counting | NFC | [CO_334:0000146](https://cassavabase.org/cvterm/76816/view) | Number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level. |
+| number of forks on branching level 1 counting | NFC1 | [CO_334:0000522](https://cassavabase.org/cvterm/77515/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the first branching level. |
+| number of forks on branching level 2 counting | NFC2 | [CO_334:0000523](https://cassavabase.org/cvterm/77519/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the second branching level. |
+| number of forks on branching level 3 counting | NFC3 | [CO_334:0000524](https://cassavabase.org/cvterm/77511/view) | Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the third branching level. |
+| number of nodes at branching level 1 counting | NNC1 | [CO_334:0000352](https://cassavabase.org/cvterm/77487/view) | Number of nodes at the first branching level. |
+| number of nodes at branching level 2 counting | NNC2 | [CO_334:0000363](https://cassavabase.org/cvterm/77488/view) | Number of nodes at the second branching level. |
+| number of nodes at branching level 3 counting | NNC3 | [CO_334:0000368](https://cassavabase.org/cvterm/77486/view) | Number of nodes at the third branching level. |
+| first apical branch height measurement in cm | FirstBranchHeight | [CO_334:0000106](https://cassavabase.org/cvterm/70751/view) | Height of first apical branch (ground level to point of first Apical branch, 9 months after planting) in cm |
+| plant height measurement in cm | PlantHeight | [CO_334:0000018](https://cassavabase.org/cvterm/70674/view) | Vertical height of plants from the ground to top of the canopy measured in centimeter (cm). |
+| plant height measurement in cm at month 12 | PlantHeight12m | COMP:0000181 | Vertical height of plants from the ground to top of the canopy measured in centimeter (cm). |
+| plant height with leaf in cm | PlantHeightLeaf | [CO_334:0000123](https://cassavabase.org/cvterm/76806/view) | Portion of the stem with leaves measured as the distance in centimeter from the point of attachment of the oldest leaf to the youngest leaf (apical leaf portion). |
+| plant height without leaf | PlantHeightNLeaf | [CO_334:0000125](https://cassavabase.org/cvterm/76838/view) | Portion of stem with no leaf measured in centimeter (cm) by deducting plant height with leaf from plant height. |
+| plant height without leaf at month 12 | PlantHeightNLeaf12m | COMP:0000182 | Portion of stem with no leaf measured in centimeter (cm) by deducting plant height with leaf from plant height. |
+| stalk length evaluation | StalkLength | [CO_334:0000227](https://cassavabase.org/cvterm/76941/view) | Visual assessment of the average length of the stalks (1=short; 2=intermediate; 3=long) |
+| stem diameter measurement in cm | StemDiam | [CO_334:0000257](https://cassavabase.org/cvterm/77121/view) | Measurement of stem diameter taken on the middle of the plant in centimeter (cm) using the vernier caliper. |
+| stem diameter measurement in cm at month 5 | StemDiam5m | COMP:0000129 | Measurement of stem diameter taken on the middle of the plant in centimeter (cm) using the vernier caliper. |
+| stem diameter measurement in cm at month 6 | StemDiam6m | COMP:0000130 | Measurement of stem diameter taken on the middle of the plant in centimeter (cm) using the vernier caliper. |
+|  |  |  |  |
 
 <br />
 
@@ -59,33 +62,125 @@ Use the following filters:
    3. Select `Years` from 2010 to 2021.
    4. Select all the `trials` available at cassavabase after the filter.
    
-## 2. Phenotypic data Information
+## 2. Phenotypic data Editing
 
-```{r message=FALSE, warning=FALSE}
-library(tidyverse); library(reactable); library(here)
+```{r, eval = FALSE}
+library(tidyverse); library(data.table); library(here)
+
+RawPhenoData <- read.csv(file = here::here("data", "phenodata.csv"), header = T, na.strings = "")
+
+RawPhenoData %>% mutate("FlowerPresence" = flower.visual.rating.0.1.CO_334.0000111,
+                        "FlowerVisRate" = flowering.ability.visual.assessment.0.3.CO_334.0000233,
+                        "VigorCIAT" = initial.plant.vigor.assessment.1.5.CO_334.0000220,
+                        "Vigor" = initial.vigor.assessment.1.7.CO_334.0000009,
+                        "PlantArchitecture" = plant.architecture.visual.rating.1.5.CO_334.0000099,
+                        "PlantHeight" = plant.height.measurement.in.cm.CO_334.0000018,
+                        "PlantHeight12m" = plant.height.measurement.in.cm.month.12.COMP.0000181,
+                        "PlantHeightLeaf" = plant.height.with.leaf.in.cm.CO_334.0000123,
+                        "PlantHeightNLeaf" = plant.height.without.leaf.CO_334.0000125,
+                        "PlantHeightNLeaf12m" = plant.height.without.leaf.month.12.COMP.0000182,
+                        "StalkLength" = stalk.length.evaluation.CO_334.0000227,
+                        "StemDiam" = stem.diameter.measurement.in.cm.CO_334.0000257,
+                        "FirstBranchHeight" = first.apical.branch.height.measurement.in.cm.CO_334.0000106,
+                     .keep = "unused") %>% melt(data = .,
+                                                id.vars = c("studyYear", "programDbId", "programName", "programDescription",
+                                                            "studyDbId", "studyName", "studyDesign", "plotWidth",
+                                                            "plotLength", "fieldSize", "fieldTrialIsPlannedToBeGenotyped",
+                                                            "fieldTrialIsPlannedToCross", "plantingDate", "harvestDate",
+                                                            "locationDbId", "locationName", "germplasmDbId", "germplasmName",
+                                                            "germplasmSynonyms", "observationLevel", "observationUnitDbId",
+                                                            "observationUnitName", "replicate", "blockNumber", "plotNumber",
+                                                            "rowNumber", "colNumber", "entryType", "plantNumber"),
+                                                variable.name = "Trait",
+                                                value.name = "Value") -> PhenoData
+PhenoData2 <- PhenoData[!is.na(PhenoData$Value),]
+
+saveRDS(object = PhenoData2, file = here::here("data", "phenotypePAGP.RDS"))
+rm(list = ls())
+
+```
+
+## 3. Phenotypic data Information
+
+```{r, message=FALSE, warning=FALSE}
+suppressMessages(library(tidyverse)); library(reactable); library(here)
 PhenoData <- readRDS(here("data","phenotypePAGP.RDS"))
 
-PhenoData %>% group_by(programName, studyYear) %>% summarise(n_trials = unique(studyName)) -> PhenoData2
 
-cat("Table 2. Number of trial per Institute in Cassavabase with Cassava Plant Shape Traits.", "\n")
-table(PhenoData2$programName, PhenoData2$studyYear)
+PhenoData %>% dplyr::select(programName, studyYear, Trait, studyName) %>% unique() -> PhenoData2
 
-cat("Table 3. Plot number of the trials available in Cassavabase with Cassava Plant Shape traits.", "\n")
-PhenoData %>% group_by(programName, studyYear) %>% count(studyName) %>% 
-   reactable(defaultPageSize = 50)
+Table2 <- table(PhenoData2$programName, PhenoData2$studyYear, PhenoData2$Trait) %>% as.data.frame()
+colnames(Table2) <- c("programName", "Year", "Trait", "N˚Trials")
+Table2 <- Table2[Table2$`N˚Trials`!=0,]
+```
+
+#### Table 2. Number of trial per Institute in Cassavabase with Cassava Plant Shape Traits.
+```{r, echo = FALSE}
+Table2  %>% reactable(groupBy = c("Trait", "programName"), columns = list(
+  "N˚Trials" = colDef(aggregate = "sum")), defaultPageSize = 15)
+```
+#### Table 3. Plot number of the trials available in Cassavabase with Cassava Plant Shape traits.
+```{r, echo = FALSE}
+PhenoData %>% dplyr::group_by(Trait, programName, studyYear) %>%
+  dplyr::count(studyName) %>% 
+   reactable(groupBy = c("Trait", "programName", "studyYear"),
+             defaultPageSize = 50,
+             columns = list(
+               n = colDef(aggregate = "sum", format = colFormat(separators = TRUE))
+             ))
 ```
 
 
-## 3. Heritability and Reliability analysis per trial
+## 4. Heritability and Reliability analysis per trial
 
+```{r, message = FALSE, warning = FALSE}
+library(plyr)
+source(here::here("code", "MixedModelsFunctions.R"))
+
+PhenoData$check <- ifelse(PhenoData$entryType!="test", PhenoData$germplasmName, "999") 
+PhenoData$new <- ifelse(PhenoData$entryType == "test", 1, 0) 
+
+PhenoData$blockNumber <- as.character(PhenoData$blockNumber)
+#PhenoData2 <- PhenoData[!PhenoData$studyName %in% BadTrialsList,]
+
+
+#fmfit <- PhenoData2 %>% filter(Trait == "PlantArchitecture") %>% dlply(.variables = c("Trait", "studyName"),
+#                              .fun = analyzeTrial.sommer)
+
+
+```
 The heritability and Reliability were estimated for each trial.
-We will proceed with the trails with reliability bigger than 0.2.
+We will proceed with the trails with reliability and heritability bigger than 0.2 and 0.1, respectively.
 
+Select the trials with unexpected number of blocks, controls for their experimental design
+```{r}
+PhenoData %>% dplyr::group_by(programName, studyYear, studyDesign, studyName) %>%
+  dplyr::summarise(n_blocks = length(unique(blockNumber)),
+                   n_reps = length(unique(replicate)),
+                   controls = length(unique(check))) -> TrialsInfo
+
+TrialsInfo %>% dplyr::filter((studyDesign %in% c("Augmented", "Alpha", "RCBD") & n_blocks == 1) |
+                               (studyDesign == "Augmented" & controls == 1)) -> BadTrialsInfo
+BadTrialsList <- BadTrialsInfo$studyName
+```
+
+
+#### Table 4. Number of blocks, replicates and control of the trials available in Cassavabase with Cassava Plant Shape traits.
+```{r, echo = FALSE}
+TrialsInfo %>% reactable(groupBy = c("programName", "studyYear", "studyDesign"),
+                         defaultPageSize = 50)
+```
+
+#### Table 5. Trials available in Cassavabase with Cassava Plant Shape traits with strange metadata.
+```{r, echo = FALSE}
+BadTrialsInfo %>% reactable(groupBy = c("programName", "studyYear", "studyDesign"),
+                         defaultPageSize = 50)
+```
 
 ## Next Steps
 
 - [x] Download Phenotypic dataset;
-- [ ] select trials by reliability;
+- [ ] select trials by reliability and heritability;
 - [ ] estimate the BLUPS, and genetic correlations between the traits;
 - [ ] Create a list with the clone names;
 - [ ] Download the Genotypic dataset from the clones phenotyped;
